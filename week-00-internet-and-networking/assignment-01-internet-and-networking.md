@@ -25,7 +25,7 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![Task 1 Screenshot](screenshots/task_1_Gemini.png)
 
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
@@ -34,7 +34,8 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+Protocol in Networking is the mutual agreed upon set of rules and standards that determines how computers interacts with eachother over a network.
+We can have completely different hardware and operating system, but they can communicate if they follow the same protocol.
 
 ---
 
@@ -59,8 +60,13 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When a user types `epicreads.com` into their browser, the internet uses DNS(Domain Name System- the internet's phonebook) to translate that human-friendly name into the server's exact IP address in Finland so the data knows where to go.
 
+When the user hits Enter, their browser sends an `HTTPS GET` request saying, "Please send me the homepage of the Epic Reads." Because it uses **HTTPS** (S for Secure), the connection is encrypted. if a user enters credit card to buy a book on the Epic Reads, that data is scrambled so no one eavesdropping on the network between the user and FInland can read it.
+
+The IP acts as the postal routing system. It attaches the destination IP address (the customer's device) and the source IP address (the Finnish server) tp every piece of data so routers worldwide know which direction to forward it. The TCP acts as the certified mail manager. TCP breaks the website into numbered chunks before sending them. On arrival without damage, requests retransmission for any missing piece, and stitches them back together in perfect numerical order.
+
+The server in Finland chops the webpage into hundreds of tiny packets. Each packet travels independently through undersea cables and global routers, they choose their paths depending on which is fastest at that exact microsecond. Once all packets reach the customer's device, TCP reassembles them into a complete webpage instantly.
 ---
 
 # 🏗️ Task 3: Application Architecture & Stack
